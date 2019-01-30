@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+
+const program = require('commander');
+const packageInfo = require('../package.json');
+const startServer = require("../lib/startServer");
+
+require('colors');
+
+program
+  .version(packageInfo.version)
+  .option('-p, --port [value]', '代理端口, 默认是 8001')
+  .parse(process.argv);
+
+startServer(program.port || 8001);

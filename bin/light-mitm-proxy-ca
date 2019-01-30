@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+const program = require('commander');
+const colors = require('colors');
+const certManager = require('../lib/certManager');
+
+program
+  .option('-c, --clear', '清理证书')
+  .option('-g, --generate', '生成根证书')
+  .parse(process.argv);
+
+if (program.clear) {
+  certManager.clearCerts(err => {
+    if (!err) {
+      console.log(colors.blue('done !'));
+    }
+  }) 
+} else if (program.generate) {
+  certManager.getRootCa();
+}

@@ -1,0 +1,22 @@
+{
+  "name": "light-mitm-proxy",
+  "version": "0.0.2",
+  "description": "轻量的中间人代理工具",
+  "main": "lib/startServer.js",
+  "bin": {
+    "light-mitm-proxy": "bin/light-mitm-proxy",
+    "light-mitm-proxy-ca": "bin/light-mitm-proxy-ca"
+  },
+  "repository": "https://github.com/MertensMing/light-mitm-proxy",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mertens",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.3.2",
+    "commander": "^2.18.0",
+    "get-port": "^4.1.0",
+    "node-easy-cert": "^1.3.1"
+  }
+}
