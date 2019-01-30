@@ -1,6 +1,6 @@
 {
   "name": "light-mitm-proxy",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "轻量的中间人代理工具",
   "main": "lib/startServer.js",
   "bin": {
